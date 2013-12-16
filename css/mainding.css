@@ -844,5 +844,6 @@ font-size: 1.5em;
 .container{clear:both;} 
 .sub-con{display:none; height:500px} 
 .cur-sub-con{ display:block;} 
-input.bd {border:1px solid #fff;}   
-input.bd a:hover{border:1px solid #fff;}  
+input.bd {border:1px solid #fff;padding:5px;}  
+input.b {border:1px solid red;padding:5px;}    
+input.bd:hover{border:1px solid #F3C200;padding:5px;}  

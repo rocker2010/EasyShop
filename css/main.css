@@ -1150,3 +1150,7 @@ overflow: hidden;
     font-weight: bold;
 		color:#FF9
 }
+.tab2{}
+.tab2 th{}
+.tab2 td{
+	padding:7px 5px;}
