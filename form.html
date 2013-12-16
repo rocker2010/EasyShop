@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+
+<title>无标题文档</title>
+</head>
+
+<body>
+<section class="demozone">
+    <form class="demo form-horizontal" id="demo2" action="#" method="post">
+        <div class="form-item">
+            <label for="username">昵称：</label>
+
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+        <div class="form-item">
+            <label for="name">邮箱：</label>
+
+            <div class="form-field"><input type="email" name="email" id="email" class="form-text"></div>
+        </div>
+        <div class="form-item">
+            <label for="pwd">密码：</label>
+
+            <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
+        </div>
+        <div class="form-item form-radio-checkbox-wrap">
+            <label>性别：</label>
+
+            <div class="form-field">
+                <label><input type="radio" name="sex" class="form-radio" value="man" checked="checked"><span>男</span></label>
+                <label><input type="radio" name="sex" class="form-radio" value="woman"><span>女</span></label>
+            </div>
+        </div>
+        <div class="form-item form-radio-checkbox-wrap">
+            <label>Options：</label>
+
+            <div class="form-field">
+                <label class="field-list-block"><input type="checkbox" checked="checked" value="1" class="form-checkbox" name=""><span>Option one is this and that—be sure to include why it's great</span></label>
+                <label class="field-list-block"><input type="checkbox" value="2" class="form-checkbox" name=""><span>Option two can also be checked and included in form results </span></label>
+                <label class="field-list-block"><input type="checkbox" value="3" class="form-checkbox" name=""><span>Option three can—yes, you guessed it—also be checked and included in form results </span></label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label for="realname">姓名：</label>
+
+            <div class="form-field"><input type="text" name="realname" id="realname" class="form-text" placeholder="请填入真实姓名"></div>
+        </div>
+        <div class="form-item">
+            <label>证件号码：</label>
+
+            <div class="form-field form-id-num-wrap">
+                <select id="id_type" size="1" name="id_type">
+                    <option value="1" selected="selected">身份证</option>
+                    <option value="2">学生证</option>
+                    <option value="3">军官证</option>
+                </select>
+                <input type="text" name="id_text" id="id_text" class="form-text">
+            </div>
+        </div>
+        <div class="form-item">
+            <label>个人简介：</label>
+
+            <div class="form-field"><textarea name="intro" id="intro"></textarea>
+
+                <p class="form-des">说明注释文字可以放在这里啊</p></div>
+        </div>
+        <div class="form-item">
+            <label for="codetext">验证码：</label>
+
+            <div class="form-field form-code-text-wrap">
+                <input type="text" id="codetext" name="codetext" class="form-text code-text">
+
+                <div class="code-pic"><img id="codePic" alt="" src="images/code.jpg"><a id="change_code" href="#">换一个</a></div>
+            </div>
+        </div>
+        <div class="form-item item-no-label form-radio-checkbox-wrap">
+            <div class="form-field">
+                <label><input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"><span>我同意所有条款……</span></label></div>
+        </div>
+        <div class="form-action">
+            <span class="submit-wrap greybtn"><input type="submit" value="提交" class="submit-btn"></span>
+        </div>
+    </form>
+</section>
+</body>
+</html>

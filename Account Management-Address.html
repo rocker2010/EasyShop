@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainding.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <!--[if IE]>
+<cc:lie></cc:lie>	
+<![endif]-->
+    <script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/reset.js?v3"></script>
+
+    <!--[if IE]>
+<script src="js/html5.min.js"></script>
+<![endif]-->
+    <title>Activate your online services</title>
+    <!--内部tabs-->
+    <script>
+<!--
+        function setTab(name, cursel, n) {
+            for (i = 1; i <= n; i++) {
+                var menu = document.getElementById(name + i);
+                var con = document.getElementById("con_" + name + "_" + i);
+                menu.className = i == cursel ? "hover" : "";
+                con.style.display = i == cursel ? "block" : "none";
+            }
+        }
+//-->
+    </script>
+    <!--内部tabs-->
+    </head>
+    <body>
+<header id="header">
+      <h1 class="logo"></h1>
+      <aside>
+    <h2>Welcome to TIENS DIS Business Center</h2>
+    <!--<dl><dt></dt><dd></dd></dl>-->
+    <nav><a href="index.html"><span class="home">返回首页</span></a><a href="login.html"><span>登录</span></a></nav>
+  </aside>
+      <div class="clearfix hLine"></div>
+    </header>
+<section id="content">
+      <h1 class="articleTitle inner"><span class="icon1"></span>Account Management</h1>
+      <div class="inner">
+    <div class="navMenu">
+          <nav>
+        <ul>
+              <li><a href="Account Management-Account Information.html" class="d4a">Account Information</a></li>
+              <li class="sel"><a href="Account Management-Address.html" class="ds5">Address</a></li>
+              <li><a href="Account Management-Account Security.html" class="d7a">Account Security</a></li>
+              <li><a href="Account Management-Bonus Payment Method.html" class="d4a">Bonus Payment Method</a></li>
+              <li><a href="Account Management-Prepaid Account Security.html" class="d7a">Prepaid Account Security</a></li>
+            </ul>
+      </nav>
+          <div class="ml" id="ml"><</div>
+          <div class="ml" id="mr" style="display:none">></div>
+        </div>
+    <div class="main">
+          <div class="mainC" id="mainC" style="height: 719px;">
+        <div class="tabBar">
+              <div class="productContent floatRight account">
+            <div class="commentArea"></div>
+            <div id="tab-container" data-easytabs="true">
+                  <ul class="mt">
+                <li class="active"><a class="tab1 active" href="#tabcontent1">Delivery Address</a></li>
+                <li><a class="tab2" href="#tabcontent2">Invoice/Postal Address</a></li>
+              </ul>
+                  <div class="reccontent quickBuy clear">
+                <div style="display: block;" id="tabcontent1" class="active">
+                      <div class="btnGreen floatR" style="margin-bottom: 10px;"><a id="various1" href="#inline1"><span>Add New</span></a></div>
+                      <div style="display: none;">
+                    <div id="inline1" style="width: 450px; height: 460px;">
+                          <div class="acRight">
+                        <input id="hfType" value="2" type="hidden">
+                        <h3>Address</h3>
+                        <div class="line"></div>
+                        <table width="100%" border="0">
+                              <tbody>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>Add to: </td>
+                                  <td><input type="text" name="username" id="username" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>Recipient: </td>
+                                  <td><input type="text" name="tb_Recipient" id="tb_Recipient" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>Tel: </td>
+                                  <td><input type="text" name="tb_Tel" id="tb_Tel" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>Address Line 1: </td>
+                                  <td><input type="text" name="tb_Address1" id="tb_Address1" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right">Address Line 2: </td>
+                                  <td><input type="text" name="tb_Address2" id="tb_Address2" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>City: </td>
+                                  <td><input type="text" name="tb_City" id="tb_City" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right">State: </td>
+                                  <td><input type="text" name="tb_State" id="tb_State" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>Zip Code: </td>
+                                  <td><input type="text" name="tb_ZipCode" id="tb_ZipCode" class="form-text"></td>
+                                </tr>
+                            <tr>
+                                  <td align="right"><span class="red">*</span>Country: </td>
+                                  <td><select data-val="true" data-val-number="字段 Id 必须是一个数字。" data-val-required="Id 字段是必需的。" id="ddlCountry" name="Id">
+                                    </select>
+                                <span class="field-validation-valid" data-valmsg-for="Id" data-valmsg-replace="true"></span></td>
+                                </tr>
+                            <tr>
+                                  <td align="right">&nbsp;</td>
+                                  <td><span class="floatL marginT2">
+                                    <input name="" type="checkbox" value="" id="cbIsDefault">
+                                    </span><span class="marginL floatL">Set as default address</span></td>
+                                </tr>
+                            <tr>
+                                  <td align="right">&nbsp;</td>
+                                  <td><span class="btnGreen floatL"><a href=""><span onclick="SaveAddress()">Add New</span></a></span></td>
+                                </tr>
+                          </tbody>
+                            </table>
+                      </div>
+                        </div>
+                  </div>
+                      <div class="clear">
+                    <table class="marginT tableD3" width="100%" border="1">
+                          <tbody>
+                        <tr style="text-align: center; COLOR: #333; BACKGROUND-COLOR: #dffffb;">
+                              <td><strong>Address</strong></td>
+                              <td><strong>Set Default</strong></td>
+                              <td colspan="2">Operation</td>
+                            </tr>
+                        <tr style="text-align: center; COLOR: #333; BACKGROUND-COLOR: #dffffb;">
+                              <td style="text-align: left;"> ; </td>
+                              <td><a class="red" onclick="SetDefault(3162)">SET Default</a></td>
+                              <td><a onclick="EditAddress(3162,2)">Edit</a></td>
+                              <td><a onclick="DelAddress(3162)">×</a></td>
+                            </tr>
+                      </tbody>
+                        </table>
+                  </div>
+                    </div>
+                <div style="display: none;" id="tabcontent2">
+                      <div class="btnGreen floatR" style="margin-bottom: 10px"><a id="various2" href="#inline2"><span>Add New</span></a></div>
+                      <div style="display: none;">
+                    <div id="inline2" style="width: 450px; height: 460px;">
+                          <div class="acRight">
+                        <input id="hfType" value="1" type="hidden">
+                        <h3>Address</h3>
+                        <div class="line"></div>
+                        <div class="tabBox1">
+                              <table width="100%" border="0">
+                            <tbody>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>Add to: </td>
+                                <td><input type="text" name="username" id="username" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>Recipient: </td>
+                                <td><input type="text" name="tb_Recipient" id="tb_Recipient" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>Tel: </td>
+                                <td><input type="text" name="tb_Tel" id="tb_Tel" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>Address Line 1: </td>
+                                <td><input type="text" name="tb_Address1" id="tb_Address1" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right">Address Line 2: </td>
+                                <td><input type="text" name="tb_Address2" id="tb_Address2" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>City: </td>
+                                <td><input type="text" name="tb_City" id="tb_City" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right">State: </td>
+                                <td><input type="text" name="tb_State" id="tb_State" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>Zip Code: </td>
+                                <td><input type="text" name="tb_ZipCode" id="tb_ZipCode" class="form-text"></td>
+                              </tr>
+                                  <tr>
+                                <td align="right"><span class="red">*</span>Country: </td>
+                                <td><select data-val="true" data-val-number="字段 Id 必须是一个数字。" data-val-required="Id 字段是必需的。" id="ddlCountry" name="Id">
+                                    <option value="1">Afghanistan</option>
+                                    <option value="2">Albania</option>
+                                    <option value="3">Algeria</option>
+                                    <option value="4">Andorra</option>
+                                    <option value="5">Angola</option>
+                                    <option value="6">Antigua and Barbuda</option>
+                                    <option value="7">Argentina</option>
+                                    <option value="8">Armenia</option>
+                                    <option value="9">Australia</option>
+                                    <option value="10">Austria</option>
+                                    <option value="11">Azerbaijan</option>
+                                    <option value="12">Bahamas</option>
+                                    <option value="13">Bahrain</option>
+                                    <option value="14">Bangladesh</option>
+                                    <option value="15">Barbados</option>
+                                    <option value="16">Belarus</option>
+                                    <option value="17">Belgium</option>
+                                    <option value="18">Belize</option>
+                                    <option value="19">Benin</option>
+                                    <option value="20">Bhutan</option>
+                                    <option value="21">Bolivia (Plurinational State of)</option>
+                                    <option value="22">Bosnia and Herzegovina</option>
+                                    <option value="23">Botswana</option>
+                                    <option value="24">Brazil</option>
+                                    <option value="25">Brunei Darussalam</option>
+                                    <option value="26">Bulgaria</option>
+                                    <option value="27">Burkina Faso</option>
+                                    <option value="28">Burundi</option>
+                                    <option value="29">Cambodia</option>
+                                    <option value="30">Cameroon</option>
+                                    <option value="31">Canada</option>
+                                    <option value="32">Cape Verde</option>
+                                    <option value="33">Central African Republic</option>
+                                    <option value="34">Chad</option>
+                                    <option value="35">Chile</option>
+                                    <option value="36">China</option>
+                                    <option value="37">Christmas Island</option>
+                                    <option value="38">Colombia</option>
+                                    <option value="39">Comoros</option>
+                                    <option value="40">Congo</option>
+                                    <option value="41">Cook Islands</option>
+                                    <option value="42">Costa Rica</option>
+                                    <option value="44">Croatia</option>
+                                    <option value="45">Cuba</option>
+                                    <option value="46">Cyprus</option>
+                                    <option value="47">Czech Republic</option>
+                                    <option value="43">Côte D'Ivoire</option>
+                                    <option value="48">Democratic People's Republic of Korea</option>
+                                    <option value="49">Democratic Republic of the Congo</option>
+                                    <option value="50">Denmark</option>
+                                    <option value="51">Djibouti</option>
+                                    <option value="52">Dominica</option>
+                                    <option value="53">Dominican Republic</option>
+                                    <option value="54">East Samoa</option>
+                                    <option value="55">Ecuador</option>
+                                    <option value="56">Egypt</option>
+                                    <option value="57">El Salvador</option>
+                                    <option value="58">Equatorial Guinea</option>
+                                    <option value="59">Eritrea</option>
+                                    <option value="60">Estonia</option>
+                                    <option value="61">Ethiopia</option>
+                                    <option value="62">Faroe Islands</option>
+                                    <option value="63">Fiji</option>
+                                    <option value="64">Finland</option>
+                                    <option value="65">France</option>
+                                    <option value="66">French Guiana</option>
+                                    <option value="67">Gabon</option>
+                                    <option value="68">Gambia</option>
+                                    <option value="69">Georgia</option>
+                                    <option value="0">Germany</option>
+                                    <option value="70">Ghana</option>
+                                    <option value="71">Greece</option>
+                                    <option value="72">Greenland</option>
+                                    <option value="73">Grenada</option>
+                                    <option value="74">Guatemala</option>
+                                    <option value="75">Guinea</option>
+                                    <option value="76">Guinea Bissau</option>
+                                    <option value="77">Guyana</option>
+                                    <option value="78">Haiti</option>
+                                    <option value="79">Honduras</option>
+                                    <option value="80">Hong Kong</option>
+                                    <option value="81">Hungary</option>
+                                    <option value="82">Iceland</option>
+                                    <option value="83">India</option>
+                                    <option value="84">Indonesia</option>
+                                    <option value="85">Iran (Islamic Republic of)</option>
+                                    <option value="86">Iraq</option>
+                                    <option value="87">Ireland</option>
+                                    <option value="88">Israel</option>
+                                    <option value="89">Italy</option>
+                                    <option value="90">Jamaica</option>
+                                    <option value="91">Japan</option>
+                                    <option value="92">Jordan</option>
+                                    <option value="93">Kazakhstan</option>
+                                    <option value="94">Kenya</option>
+                                    <option value="95">Kiribati</option>
+                                    <option value="96">Kuwait</option>
+                                    <option value="97">Kyrgyzstan</option>
+                                    <option value="98">Lao People's Democratic Republic</option>
+                                    <option value="99">Latvia</option>
+                                    <option value="100">Lebanon</option>
+                                    <option value="101">Lesotho</option>
+                                    <option value="102">Liberia</option>
+                                    <option value="103">Libya*</option>
+                                    <option value="104">Liechtenstein</option>
+                                    <option value="105">Lithuania</option>
+                                    <option value="106">Luxembourg</option>
+                                    <option value="107">Macao</option>
+                                    <option value="108">Madagascar</option>
+                                    <option value="109">Malawi</option>
+                                    <option value="110">Malaysia</option>
+                                    <option value="111">Maldives</option>
+                                    <option value="112">Mali</option>
+                                    <option value="113">Malta</option>
+                                    <option value="114">Marshall Islands</option>
+                                    <option value="115">Martinique</option>
+                                    <option value="116">Mauritania</option>
+                                    <option value="117">Mauritius</option>
+                                    <option value="118">Mexico</option>
+                                    <option value="119">Micronesia (Federated States of)</option>
+                                    <option value="120">Monaco</option>
+                                    <option value="121">Mongolia</option>
+                                    <option value="122">Montenegro</option>
+                                    <option value="123">Morocco</option>
+                                    <option value="124">Mozambique</option>
+                                    <option value="125">Myanmar</option>
+                                    <option value="126">Namibia</option>
+                                    <option value="127">Nauru</option>
+                                    <option value="128">Nepal</option>
+                                    <option value="129">Netherlands</option>
+                                    <option value="130">New Zealand</option>
+                                    <option value="131">Nicaragua</option>
+                                    <option value="132">Niger</option>
+                                    <option value="133">Nigeria</option>
+                                    <option value="134">Niue</option>
+                                    <option value="135">Norfolk Island</option>
+                                    <option value="136">Norway</option>
+                                    <option value="137">Oman</option>
+                                    <option value="138">Pakistan</option>
+                                    <option value="139">Palau</option>
+                                    <option value="140">Palestine</option>
+                                    <option value="141">Panama</option>
+                                    <option value="142">Papua New Guinea</option>
+                                    <option value="143">Paraguay</option>
+                                    <option value="144">Peru</option>
+                                    <option value="145">Philippines</option>
+                                    <option value="146">Poland</option>
+                                    <option value="147">Portugal</option>
+                                    <option value="148">Puerto Rico</option>
+                                    <option value="149">Qatar</option>
+                                    <option value="150">Republic of Korea</option>
+                                    <option value="151">Republic of Moldova</option>
+                                    <option value="152">Reunion Islands</option>
+                                    <option value="153">Romania</option>
+                                    <option value="154">Russian Federation</option>
+                                    <option value="155">Rwanda</option>
+                                    <option value="156">Saint Helena</option>
+                                    <option value="157">Saint Kitts and Nevis</option>
+                                    <option value="158">Saint Lucia</option>
+                                    <option value="159">Saint Vincent and the Grenadines</option>
+                                    <option value="160">Samoa</option>
+                                    <option value="161">San Marino</option>
+                                    <option value="162">Sao Tome and Principe</option>
+                                    <option value="163">Saudi Arabia</option>
+                                    <option value="164">Senegal</option>
+                                    <option value="165">Serbia</option>
+                                    <option value="166">Seychelles</option>
+                                    <option value="167">Sierra Leone</option>
+                                    <option value="168">Singapore</option>
+                                    <option value="169">Slovakia</option>
+                                    <option value="170">Slovenia</option>
+                                    <option value="171">Solomon Islands</option>
+                                    <option value="172">Somalia</option>
+                                    <option value="173">South Africa</option>
+                                    <option value="174">South ?Sudan</option>
+                                    <option value="175">Spain</option>
+                                    <option value="176">Sri Lanka</option>
+                                    <option value="177">Sudan</option>
+                                    <option value="178">Suriname</option>
+                                    <option value="179">Swaziland</option>
+                                    <option value="180">Sweden</option>
+                                    <option value="181">Switzerland</option>
+                                    <option value="182">Syrian Arab Republic</option>
+                                    <option value="183">Taiwan</option>
+                                    <option value="184">Tajikistan</option>
+                                    <option value="185">Thailand</option>
+                                    <option value="186">The former Yugoslav Republic of Macedonia</option>
+                                    <option value="187">Timor-Leste</option>
+                                    <option value="188">Togo</option>
+                                    <option value="189">Tonga</option>
+                                    <option value="190">Trinidad and Tobago</option>
+                                    <option value="191">Tunisia</option>
+                                    <option value="192">Turkey</option>
+                                    <option value="193">Turkmenistan</option>
+                                    <option value="194">Tuvalu</option>
+                                    <option value="195">Uganda</option>
+                                    <option value="196">Ukraine</option>
+                                    <option value="197">United Arab Emirates</option>
+                                    <option value="198">United Kingdom of Great Britain and Northern Ireland</option>
+                                    <option value="199">United Republic of Tanzania</option>
+                                    <option value="200">United States of America</option>
+                                    <option value="201">Uruguay</option>
+                                    <option value="202">Uzbekistan</option>
+                                    <option value="203">Vanuatu</option>
+                                    <option value="204">Vatican</option>
+                                    <option value="205">Venezuela (Bolivarian Republic of)</option>
+                                    <option value="206">Viet Nam</option>
+                                    <option value="207">Virgin Islands</option>
+                                    <option value="208">Wake Island</option>
+                                    <option value="209">Western Samoa</option>
+                                    <option value="210">Yemen</option>
+                                    <option value="211">Zambia</option>
+                                    <option value="212">Zimbabwe</option>
+                                  </select>
+                                      <span class="field-validation-valid" data-valmsg-for="Id" data-valmsg-replace="true"></span></td>
+                              </tr>
+                                  <tr>
+                                <td align="right">&nbsp;</td>
+                                <td><span class="floatL marginT2">
+                                  <input name="" type="checkbox" value="" id="cbIsDefault">
+                                  </span><span class="marginL floatL">Set as default address</span></td>
+                              </tr>
+                                  <tr>
+                                <td align="right">&nbsp;</td>
+                                <td><span class="btnGreen floatL"><a href=""><span onclick="SaveAddress()">Add New</span></a></span></td>
+                              </tr>
+                                </tbody>
+                          </table>
+                            </div>
+                      </div>
+                        </div>
+                  </div>
+                      <div class="tabBox1">
+                    <table width="100%" border="1">
+                          <tbody>
+                        <tr style="text-align: center; COLOR: #333; BACKGROUND-COLOR: #dffffb;">
+                              <td><strong>Address</strong></td>
+                              <td><strong>Set Default</strong></td>
+                              <td colspan="2">Operation</td>
+                            </tr>
+                        <tr style="text-align: center; COLOR: #333; BACKGROUND-COLOR: #dffffb;">
+                              <td style="text-align: left;"> 1111,Majene;,765,Germany </td>
+                              <td> DEFAULT</td>
+                              <td><a onclick="EditAddress(-1,1)">Edit</a></td>
+                              <td><a onclick="DelAddress(-1)">×</a></td>
+                            </tr>
+                        <tr style="text-align: center; COLOR: #333; BACKGROUND-COLOR: #dffffb;">
+                              <td style="text-align: left;"> ; </td>
+                              <td><a class="red" onclick="SetDefault(3163)">SET Default</a></td>
+                              <td><a onclick="EditAddress(3163,1)">Edit</a></td>
+                              <td><a onclick="DelAddress(3163)">×</a></td>
+                            </tr>
+                      </tbody>
+                        </table>
+                  </div>
+                    </div>
+              </div>
+                </div>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </section>
+<footer id="footer">
+      <div class="clearfix hLine"></div>
+      <ul class="inner">
+    <li>2013 Tiens Group © All Rights Reserved </li>
+    <li>|</li>
+    <li>Your use of this website constitutes acknowledgement and acceptance of our <a href="#">Terms</a> & <a href="#">conditions</a> .</li>
+  </ul>
+    </footer>
+
+<!-----------------------点击编辑-----------------------------> 
+
+<script type="text/javascript">   
+
+function aaa(id)
+{
+	var test = document.getElementById(id);  
+	test.readOnly = false;     
+	test.className = "b";  
+}
+
+function bbb(obj)
+{
+	obj.readOnly = true;   //不可编辑状态   
+	obj.className = "bd";   
+}
+
+</script> 
+<!-----------------------点击编辑----------------------------->
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/mainding.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/reset.js?v3"></script>
+
+
+<script type="text/javascript"> 
+var EX = {
+  addEvent:function(k,v){
+    var me = this;
+    if (me.addEventListener)
+      me.addEventListener(k, v, false);
+    else if(me.attachEvent)
+      me.attachEvent("on" + k, v);
+    else
+      me["on" + k] = v;
+  },
+  removeEvent:function(k,v){
+    var me = this;
+    if (me.removeEventListener)
+      me.removeEventListener(k, v, false);
+    else if (me.detachEvent)
+      me.detachEvent("on" + k, v);
+    else
+      me["on" + k] = null;
+  },
+  stop:function(evt){
+    evt = evt || window.event;
+    evt.stopPropagation?evt.stopPropagation():evt.cancelBubble=true;
+  }
+};
+document.getElementById('pop2').onclick = EX.stop;
+var url = '#'; 
+function show(){ 
+var o = document.getElementById('pop2'); 
+o.style.display = ""; 
+setTimeout(function(){EX.addEvent.call(document,'',hide);});
+} 
+function hide(){ 
+var o = document.getElementById('pop2'); 
+o.style.display = "none"; 
+EX.removeEvent.call(document,'',hide);
+} 
+</script>
+<!--[if IE]>
+<script src="js/html5.min.js"></script>
+<![endif]-->
+<title>Activate your online services</title>
+</head>
+
+<body>
+<header id="header">
+  <h1 class="logo"></h1>
+  <aside>
+    <h2>Welcome to TIENS DIS Business Center</h2>
+    <!--<dl><dt></dt><dd></dd></dl>-->
+    <nav><a href="index.html"><span class="home">返回首页</span></a><a href="login.html"><span>登录</span></a></nav>
+  </aside>
+  <div class="clearfix hLine"></div>
+</header>
+<section id="content">
+  <h1 class="articleTitle inner"><span class="icon3"></span>Sponsor New DIS
+</h1>
+  <div class="inner">
+    <div class="navMenu">
+      <nav>
+        <ul>
+          <li><a href="Sponsor New DIS.html" class="s1a">Step1</a></li>
+          <li><a href="Sponsor New DIS-step2.html" class="s2a">Step2</a></li>
+          <li class="sel"><a href="Sponsor New DIS-step3.html" class="s3"><strong>Step3</strong></a></li>
+          <li class="noActive"><a href="#" class="s4a">Step4</a></li>
+          <li class="noActive"><a href="#" class="s5a">Step5</a></li>
+          <li class="noActive"><a href="#" class="s6a">Step6</a></li>
+        </ul>
+      </nav>
+      <div class="ml" id="ml"><</div>
+      <div class="ml" id="mr" style="display:none">></div>
+    </div>
+    <div class="main">
+      <div class="mainC" style="height:880px">
+        <h1>Detailed Info.</h1>
+        <p>Please enter your detailed information below.</p>
+         <div class="form-horizontal  clearfix">
+         <div class="form-field">
+                <label><input type="radio" name="sex" class="form-radio" value="man" checked="checked"><span>Personal User</span></label>
+                <label><input type="radio" name="sex" class="form-radio" value="woman"><span>Company User</span></label>
+            </div>
+        <div class="form-item">
+            <label for="username"><span class="red">*</span>First Name:</label>
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+        
+        <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Last Name:</label>
+
+            <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
+        </div>
+         <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Title:</label>
+
+             <div class="form-field form-id-num-wrap">
+            <select id="u33" class="u33">
+<option selected="" value="Where is your hometown?">Mr</option>
+<option value="What is the date of your birthday?">Mrs</option>
+<option selected="" value="Where is your hometown?">Mr</option>
+<option value="What is the date of your birthday?">Mrs</option>
+<option selected="" value="Where is your hometown?">Mr</option>
+<option value="What is the date of your birthday?">Mrs</option>
+</select>
+
+  
+               
+            </div>
+        </div> 
+        
+        <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Date of Birth:</label>
+
+            <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
+        </div>
+        
+        
+        <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Certificates:</label>
+
+             <div class="form-field form-id-num-wrap">
+            <select id="u33" class="u33">
+<option selected="" value="Where is your hometown?">ID Card</option>
+<option value="What is the date of your birthday?">Password</option>
+<option selected="" value="Where is your hometown?">ID Card</option>
+<option value="What is the date of your birthday?">Password</option>
+<option selected="" value="Where is your hometown?">ID Card</option>
+<option value="What is the date of your birthday?">Password</option>
+</select>
+
+  
+               
+            </div>
+        </div>
+        
+        
+        
+        <div class="form-item">
+            <label for="pwd">Certificate Number:</label>
+
+            <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
+        </div>
+        <div class="form-item">
+            <label for="pwd">&nbsp;</label>
+
+            <div class="form-field"><input name="" type="checkbox" disabled value="" checked>I will send the copy of my certifciate to Tiens branch.</div>
+        </div>
+        
+         <div class="form-item">
+          <label for="pwd">&nbsp;</label>
+          
+          
+           <a href="javascript:void(0);" onclick="show();"><div class="form-field"><span class="marginT2 floatL"><input name="" type="checkbox" value="" ></span><span class="floatL marginL"><strong>Co-applicant</strong></span></div></a>
+            
+            
+            
+
+            
+        </div>
+        
+        <div class="tcEwm">
+        
+        
+        <div id="pop2" class="pop2" style="display:none;"> 
+                	
+			 <div class="form-item">
+            <label for="username"><span class="red">*</span>First Name:</label>
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+        
+         <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Last Name:</label>
+
+            <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
+        </div>
+         <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Title:</label>
+
+             <div class="form-field form-id-num-wrap">
+            <select id="u33" class="u33">
+<option selected="" value="Where is your hometown?">Mr</option>
+<option value="What is the date of your birthday?">Mrs</option>
+<option selected="" value="Where is your hometown?">Mr</option>
+<option value="What is the date of your birthday?">Mrs</option>
+<option selected="" value="Where is your hometown?">Mr</option>
+<option value="What is the date of your birthday?">Mrs</option>
+</select>
+
+  
+               
+            </div>
+        </div> 
+        
+        <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Date of Birth:</label>
+
+            <div class="form-field"><input type="password" class="form-text" id="pwd" name="pwd"></div>
+        </div>
+        
+
+         </div>
+           
+         </div> 
+         
+         <div class="line"></div>
+         
+         <div class="form-item">
+            <label for="pwd"><span class="red">*</span>Language Perference:</label>
+
+             <div class="form-field form-id-num-wrap">
+            <select id="u33" class="u33">
+<option selected="" value="Where is your hometown?">Chinese</option>
+<option value="What is the date of your birthday?">English</option>
+<option selected="" value="Where is your hometown?">Chinese</option>
+<option value="What is the date of your birthday?">English</option>
+<option selected="" value="Where is your hometown?">Chinese</option>
+<option value="What is the date of your birthday?">English</option>
+</select>
+
+  
+               
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label for="username"><span class="red">*</span>Day Phone:</label>
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+        
+        <div class="form-item">
+            <label for="username">&nbsp;</label>
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+        
+        <div class="form-item">
+            <label for="username"><span class="red">*</span>Email:</label>
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+        
+        <div class="form-item">
+            <label for="username"><span class="red">*</span>Re-enter Email:</label>
+            <div class="form-field"><input type="text" name="username" id="username" class="form-text" placeholder="6-32个字符"></div>
+        </div>
+         
+         
+        <div class="form-item">
+            <label for="pwd">&nbsp;</label>
+
+            <div class="form-field"><input name="" type="checkbox" value="">I would not like to receive news and special offers by email.</div>
+        </div> 
+        
+        
+         
+         
+         
+         
+         
+         
+</div>
+            
+           
+                    <div class="line"></div>
+        <div class="form-item">
+            <span class="btnGreen floatR"><a href="Sponsor New DIS-step4.html"><span>Continue >></span></a></span>
+        </div>
+           
+           
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        </div>
+      
+       
+      </div>
+    
+    
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="clearfix hLine"></div>
+  <ul class="inner">
+    <li>2013 Tiens Group © All Rights Reserved </li>
+    <li>|</li>
+    <li>Your use of this website constitutes acknowledgement and acceptance of our <a href="#">Terms</a> & <a href="#">conditions</a> .</li>
+  </ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/mainding.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/reset.js?v3"></script>
+<script src="js/jquery.easytabs.js"></script>
+<!--[if IE]>
+<script src="js/html5.min.js"></script>
+<![endif]-->
+<title>Activate your online services</title>
+<script type="text/javascript">
+$(document).ready( function() {
+  $('#tab-container').easytabs();
+});
+</script>
+</head>
+<body>
+<header id="header">
+  <h1 class="logo"></h1>
+  <aside>
+    <h2>Welcome to TIENS DIS Business Center</h2>
+    <!--<dl><dt></dt><dd></dd></dl>-->
+    <nav><a href="index.html"><span class="home">返回首页</span></a><a href="login.html"><span>登录</span></a></nav>
+  </aside>
+  <div class="clearfix hLine"></div>
+</header>
+<section id="content">
+  <h1 class="articleTitle inner"><span class="icon7"></span>Track Your Orders</h1>
+  <div class="inner">
+    <div class="navMenu">
+      <nav>
+        <ul>
+          <li><a href="placeAnOrder.html" class="d4a">Place an Order</a></li>
+          <li><a href="Group Order.html"  class="d4a">Group Order</a></li>
+          <li class="sel"><a href="Track Orders.html"  class="ds4">Track Orders </a></li>
+        </ul>
+      </nav>
+      <div class="ml" id="ml"><</div>
+      <div class="ml" id="mr" style="display:none">></div>
+    </div>
+    <div class="main">
+      <div class="mainC" id="mainC">
+        <div class="productContent floatRight account">
+          <div class="commentArea"> </div>
+          <div id="tab-container">
+            <ul class="mt">
+              <li><a class="tab1" href="#tabcontent1">Search by Date and Type</a></li>
+              <li><a class="tab2" href="#tabcontent2">Search by Status</a></li>
+              <li><a class="tab3" href="#tabcontent3">Search by Order Number</a></li>
+            </ul>
+            <div class="reccontent quickBuy clear">
+              <div style="display: block;" id="tabcontent1">
+                <div class=" clear">
+                  <h8>You could search the orders by date and type :</h8>
+                  <div class="line"></div>
+                  <div class="clear">
+                    <div class="marginT"><strong>Time range:</strong></div>
+                    <div> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="radio" value="" checked>
+                      </span> <span class="floatL marginL">Current Period</span> </span> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="radio" value="" >
+                      </span> <span class="floatL marginL">Last 24 Hours</span> </span> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="radio" value="" >
+                      </span> <span class="floatL marginL">Last 7Days</span> </span> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="radio" value="" >
+                      </span> <span class="floatL marginL">Last 30 Days</span> </span> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="radio" value="">
+                      </span> <span class="floatL marginL">All</span> </span> </div>
+                  </div>
+                  <div class="clear">
+                    <div class="marginT"><strong>Order Type:</strong></div>
+                    <div> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="checkbox" value="" checked>
+                      </span> <span class="floatL marginL">My Order</span> </span> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="checkbox" value="" checked>
+                      </span> <span class="floatL marginL">Group Order</span> </span> <span class="floatL"> <span class="floatL marginL12 marginT2">
+                      <input name="" type="checkbox" value="" checked>
+                      </span> <span class="floatL marginL">Autoship Order</span> </span> </div>
+                  </div>
+                  <div class="clear"><span class="btnOrange"><a href="javascript:void(0);" onClick="show('pop2');"><span>Search</span></a></span></div>
+                  <div class="line clear"></div>
+                  <div class="clearfix"><span class="floatR">Currency:<span class="green">USD</span></span></div>
+                  <div id="pop2" class="pop2">
+                    <h1 class="tabTitle marginT"><b>My Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h1 class="tabTitle"><b>My Group Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="placeAnOrder-ordersummer.html">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h1 class="tabTitle"><b>My Autoship Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="display: none;" id="tabcontent2">
+                <div>
+                  <h8>You could search the orders by status :</h8>
+                  <div class="line"></div>
+                  <div class="marginT"> <b>Order Status:</b> 
+                    <select id="u33">
+                      <option selected="" value="Where is your hometown?">11111111111111</option>
+                      <option value="What is the date of your birthday?">2222222222222222222</option>
+                    </select><span class="btnOrange marginL"><a href="javascript:void(0);" onClick="show('pop2');"><span>Search</span></a></span>
+                    </div>
+                  <div class="clearfix"><span class="floatR">Currency:<span class="green">USD</span></span></div>
+                  <div id="pop2" class="pop2">
+                    <h1 class="tabTitle marginT"><b>My Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h1 class="tabTitle"><b>My Group Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="placeAnOrder-ordersummer.html">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h1 class="tabTitle"><b>My Autoship Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="display: none;" id="tabcontent3">
+                <div class="clear">
+                  <h8>You could search the orders by Order Number :</h8>
+                  <div class="line"></div>
+                  <div class="marginT"> <b>Order Number:</b> 
+                    <input type="text" name="username" id="username" class="form-text"><span class="btnOrange marginL"><a href="javascript:void(0);" onClick="show('pop2');"><span>Search</span></a></span>
+                    </div>
+                  <div class="clearfix"><span class="floatR">Currency:<span class="green">USD</span></span></div>
+                  <div id="pop2" class="pop2">
+                    <h1 class="tabTitle marginT"><b>My Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h1 class="tabTitle"><b>My Group Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="placeAnOrder-ordersummer.html">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h1 class="tabTitle"><b>My Autoship Orders</b></h1>
+                    <div class="tabBox1">
+                      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th>My Order No.#
+                            </td>
+                          <th>Order Amount
+                            </td>
+                          <th>Total PV/BV
+                            </td>
+                          <th>Status
+                            </td>
+                          <th>Order Time
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                        <tr>
+                          <td class="aClass"><a href="">SA04969497</a></td>
+                          <td>30.00</td>
+                          <td>20.00/20.00</td>
+                          <td>Unpaid</td>
+                          <td>2013/5/30 4:59:13</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="clearfix hLine"></div>
+  <ul class="inner">
+    <li>2013 Tiens Group © All Rights Reserved </li>
+    <li>|</li>
+    <li>Your use of this website constitutes acknowledgement and acceptance of our <a href="#">Terms</a> & <a href="#">conditions</a> .</li>
+  </ul>
+</footer>
+</body>
+</html>

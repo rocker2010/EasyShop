@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <style>
+  .form-item label{width:120px;}
+  .form-horizontal .form-action, .form-horizontal .item-no-label {padding-left: 120px;text-align: left;}
+  </style>
+  <!--[if IE]>
+<script src="js/html5.min.js"></script>
+ <![endif]-->
+  <title>TIENS DIS Business Center</title>
+  </head>
+  <body>
+<header id="header">
+    <h1 class="logo"></h1>
+    <aside>
+    <h2>Welcome to TIENS DIS Business Center</h2>
+    <!--<dl><dt></dt><dd></dd></dl>-->
+    <nav><a href="index.html"><span class="home">返回首页</span></a><a href="#"><span>登录</span></a></nav>
+  </aside>
+    <div class="clearfix hLine"></div>
+  </header>
+<section id="contant"><div id="login"><h1></h1><div class="loginBox"><form method="post" action="#" id="demo2" class="demo form-horizontal">
+        <div class="form-item">
+            <label for="username">User ID/Login Name：</label>
+
+            <div class="form-field"><input type="text" placeholder="6-32个字符" class="form-text" id="username" name="username"></div>
+        </div>
+        <div class="form-item">
+            <label for="pwd">Password：</label>
+
+            <div class="form-field"><input type="password" name="pwd" id="pwd" class="form-text"></div>
+        </div>
+        <!--<div>
+           <label>&nbsp;</label><div class="form-field red">请输入色块的龙卷风开始了了库连接</div>
+        </div>-->
+        <div class="form-item">
+            <label for="codetext">Security Code：</label>
+
+            <div class="form-field form-code-text-wrap">
+                <input name="codetext" type="text" class="form-text code-text" id="codetext" style="width:100px">
+                <div class="code-pic"><img src="images/code.jpg" alt="" id="codePic"><a href="#" id="change_code" class="txt12">换一个</a></div>
+            </div>
+        </div>
+        <div class="form-item item-no-label form-radio-checkbox-wrap">
+            <div class="form-field">
+                <label><span><a href="ForgotPassword.html" class="grayBlue">Forgot your password?</a></span></label></div>
+        </div>
+        <div class="form-action">
+            <span class="submit-wrap"><span class="btnGreen"><a href="#"><span>Login</span></a></span><span class="btnOrange"><a href="Registration.html"><span>Become a Tiens DIS </span></a></span></span>
+        </div>
+    </form>
+    <div class="active"><h3 class="blue">For TIENS DIS, If you visit this website for the first time, please activate your online account here >></h3><span class="btnBlue floatR"><a href="Activation.html"><span>Activate</span></a></span></div></div></div>
+    <div class="container"><div class="imgMask"></div>
+    <div id="slides">
+        
+        <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/"> <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/"> <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/"> <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/"><img src="img/example-slide-5.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/"></div>
+  </div>
+  </section>
+<footer id="footer"><div class="clearfix hLine"></div><ul>    <li>2013 Tiens Group © All Rights Reserved </li>
+    <li>|</li>
+    <li>Your use of this website constitutes acknowledgement and acceptance of our <a href="#">Terms</a> & <a href="#">conditions</a> .</li>
+</ul></footer>
+<!-- End SlidesJS Required: Start Slides --> 
+
+<!-- SlidesJS Required: Link to jQuery --> 
+<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/reset.js?v3"></script>
+<!-- End SlidesJS Required --> 
+
+<!-- SlidesJS Required: Link to jquery.slides.js --> 
+<script src="js/jquery.slides.min.js"></script> 
+<!-- End SlidesJS Required --> 
+
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready --> 
+<script>
+window.onresize = window.onload = function(){
+     var h
+var slidescss = {background:"url(css/images/mback2.png) repeat scroll 0 0 transparent"};
+var imgblur = {'-webkit-filter':"blur(2px)",filter:"blur(2px)",'-moz-filter':"blur(2px)",'-o-filter':"blur(6px)"};
+var imgblurN = {'-webkit-filter':"blur(0)",filter:"blur(0)",'-moz-filter':"blur(0)",'-o-filter':"blur(0)"};
+var slidescssN = {background:"url(css/images/mback.png) repeat scroll 0 0 transparent"};
+     if(!!(window.attachEvent && !window.opera))
+     {
+      h = document.documentElement.clientHeight-110;
+     }
+	 $('#username').focus(function(){$('.imgMask').css(slidescss);$('#slides img').css(imgblur)})
+	 $('#username').blur(function(){$('.imgMask').css(slidescssN);$('#slides img').css(imgblurN)});
+	 $('#pwd').focus(function(){$('.imgMask').css(slidescss);$('#slides img').css(imgblur)}); 
+	 $('#pwd').blur(function(){$('.imgMask').css(slidescssN);$('#slides img').css(imgblurN)});
+	 $('#codetext').focus(function(){$('.imgMask').css(slidescss);$('#slides img').css(imgblur)})
+	 $('#codetext').blur(function(){$('.imgMask').css(slidescssN);$('#slides img').css(imgblurN)});
+    $(function() {
+		h = document.documentElement.clientHeight-200;
+		$('#slides').css("height",h);
+		$('#slides img').css("height",h+200);
+		
+      $('#slides').slidesjs({
+        width: 940,
+        height: h,
+        navigation: {
+          effect: "fade"
+        },
+        pagination: {
+          effect: "fade"
+        },
+        effect: {
+          fade: {
+            speed: 400
+          }
+        }
+      });
+    });	 
+	 }
+  </script> 
+<!-- End SlidesJS Required -->
+</body>
+</html>

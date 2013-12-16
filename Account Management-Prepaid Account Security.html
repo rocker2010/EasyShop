@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/mainding.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/reset.js?v3"></script>
+<!--[if IE]>
+<script src="js/html5.min.js"></script>
+<![endif]-->
+<title>Activate your online services</title>
+<!--  点击弹出层js  -->
+    <script type="text/javascript"> 
+var EX = {
+  addEvent:function(k,v){
+    var me = this;
+    if (me.addEventListener)
+      me.addEventListener(k, v, false);
+    else if(me.attachEvent)
+      me.attachEvent("on" + k, v);
+    else
+      me["on" + k] = v;
+  },
+  removeEvent:function(k,v){
+    var me = this;
+    if (me.removeEventListener)
+      me.removeEventListener(k, v, false);
+    else if (me.detachEvent)
+      me.detachEvent("on" + k, v);
+    else
+      me["on" + k] = null;
+  },
+  stop:function(evt){
+    evt = evt || window.event;
+    evt.stopPropagation?evt.stopPropagation():evt.cancelBubble=true;
+  }
+};
+document.getElementById('pop2').onclick = EX.stop;
+var url = '#'; 
+function show(id){ 
+var o = document.getElementById(id); 
+o.style.display = ""; 
+setTimeout(function(){EX.addEvent.call(document,'',hide);});
+} 
+function hide(id){ 
+var o = document.getElementById(id); 
+o.style.display = "none"; 
+EX.removeEvent.call(document,'click',hide);
+} 
+
+</script>
+
+<!--  点击弹出层js  -->
+</head>
+
+<body>
+<header id="header">
+  <h1 class="logo"></h1>
+  <aside>
+    <h2>Welcome to TIENS DIS Business Center</h2>
+    <!--<dl><dt></dt><dd></dd></dl>-->
+    <nav><a href="index.html"><span class="home">返回首页</span></a><a href="login.html"><span>登录</span></a></nav>
+  </aside>
+  <div class="clearfix hLine"></div>
+</header>
+<section id="content">
+  <h1 class="articleTitle inner"><span class="icon1"></span>Account Management</h1>
+  <div class="inner">
+    <div class="navMenu">
+      <nav>
+        <ul>
+          <li class="sel"><a href="Account Management-Prepaid Account Security.html" class="ds7">Prepaid Account Security</a></li>
+          <li><a href="Account Management-chongzhi.html" class="d5a">充值</a></li>
+          <li><a href="Account Management-zhifu.html" class="d7a">支付</a></li>
+        </ul>
+      </nav>
+      <div class="ml" id="ml"><</div>
+      <div class="ml" id="mr" style="display:none">></div>
+    </div>
+    <div class="main">
+      <div class="mainC" id="mainC">
+        <div class="container1">
+
+            <div class="floatL acLeft">
+              <h3>Prepaid Account Security</h3>
+              <div class="line"></div>
+              
+              <div>We can help you resolve issues with your account more quickly if we have a phone number or an email address where we can send a code. </div>
+               <div class="acBanner" style="position:absolute; bottom:10px;"><img src="img/example-slide-1.jpg"></div>
+
+            </div>
+            
+          <div class="floatR acRight" style="width:56%; background:#edfefc; height:430px">
+              <h3>Prepaid Account Security</h3>
+              <div class="line"></div>
+              
+              <div class="colorO">Current Password: ******</div>
+              <div class="btnBlue floatL marginT"><a href="javascript:void(0);" onClick="show('pop3');"><span>Change</span></a></div>
+              
+              
+              
+              
+              
+              <div class="tcEwm clear" style="position: absolute; top:70px; float:right; background:#edfefc; width:420px ">
+            	<div id="pop3" class="pop2" style="display:none;"> 
+
+  				<div class="colorO">A strong password helps prevent unauthorized access to your account.</div>
+               <div class="">Tiens Distributor ID:   <strong>9800403742</strong></div>
+                <div class="">AccountNameDistributor :   <strong>Jean Ive Ruault</strong></div>
+              
+              
+              
+              <table width="100%" border="0">
+                <tr>
+                  <td width="30%" align="right">Current Password:</td>
+                  <td width="70%"><input type="text" name="username" id="username" class="form-text"></td>
+                </tr>
+                <tr>
+                  <td width="30%" align="right">New Password:</td>
+                  <td width="70%"><input type="text" name="username" id="username" class="form-text"></td>
+                </tr>
+                 <tr>
+                  <td width="30%" align="right">&nbsp;</td>
+                  <td width="70%">only six numbers can be entered</td>
+                </tr>
+                <tr>
+                  <td width="30%" align="right">Re-enter new Password:</td>
+                  <td width="70%"><input type="text" name="username" id="username" class="form-text"></td>
+                </tr>
+                
+                <tr>
+                  <td width="30%" align="right">Security Code:</td>
+                  <td width="70%"><span class="floatL "><input type="text" name="username" id="username" class="form-text150 floatL"><span class="floatL marginL"><img src="css/images/yzm.jpg"</span></td>
+                </tr>
+                
+                
+                <tr>
+                  <td width="30%" align="right">&nbsp;</td>
+                  <td width="70%">
+                  <span class="btnBlue floatL marginT"><a href="javascript:void(0);" onClick="hide('pop3')"><span>Save</span></a></span>
+                  
+                  
+                  <span class="btnGreen floatL marginT"><a href="javascript:void(0);" onClick="hide('pop3')"><span>Cancel</span></a></span></td>
+                </tr>
+                
+             
+              </table> 
+</div>
+            
+            </div>
+              
+              
+              
+              
+              
+         
+            </div>
+     
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="clearfix hLine"></div>
+  <ul class="inner">
+    <li>2013 Tiens Group © All Rights Reserved </li>
+    <li>|</li>
+    <li>Your use of this website constitutes acknowledgement and acceptance of our <a href="#">Terms</a> & <a href="#">conditions</a> .</li>
+  </ul>
+</footer>
+ 
+
+
+<!-----------------------点击编辑----------------------------->
+
+<script type="text/javascript">   
+
+function aaa(id)
+{
+	var test = document.getElementById(id);  
+	test.readOnly = false;     
+	test.className = "b";  
+}
+
+function bbb(obj)
+{
+	obj.readOnly = true;   //不可编辑状态   
+	obj.className = "bd";   
+}
+
+</script>   
+<!-----------------------点击编辑----------------------------->
+</body>
+</html>

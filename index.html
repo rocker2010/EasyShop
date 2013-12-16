@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+	<style type="text/css" media="screen, projection">
+@-webkit-keyframes rain {
+0% {
+background-position:0 0;
+}
+100% {
+background-position:188px 179px;
+}
+}
+@-moz-keyframes rain {
+0% {
+background-position:0 0;
+}
+100% {
+background-position:188px 179px;
+}
+}
+@-o-keyframes rain {
+0% {
+background-position:0 0;
+}
+100% {
+background-position:188px 179px;
+}
+}
+@keyframes rain {
+0% {
+background-position:0 0;
+}
+100% {
+background-position:188px 179px;
+}
+}
+#parallax {
+	background-image: url("images/background.jpg");
+	bottom: 0;
+	height: 470px;
+	overflow: hidden;
+	position: absolute;
+	width: 950px;
+}
+.logo {
+	height: 365px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 1000px;
+}
+.parallax-viewport {
+	position: relative;     /* relative, absolute, fixed */
+	overflow: hidden;
+}
+.parallax-layer {
+	position: absolute;
+}
+.iFont {
+	float:left;
+	line-height:200px;
+	font-family:'Racing Sans One';
+	font-size:28px;
+	color:#fff;
+}
+#footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	left:0;
+	_position:relative;
+	_top:420px;
+}
+.men {
+	background: url(css/images/eventi.png) repeat 0 0 transparent;
+	display:block;
+	color:#FFF
+}
+a:hover {
+	color:#fff;
+	text-decoration:none;
+	-webkit-animation:rain 0.5s;
+	-moz-animation:rain 0.5s;
+	-o-animation:rain 0.5s;
+	animation:rain 0.5s;
+}
+</style>
+	<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+	// increase the default animation speed to exaggerate the effect
+	$(function() {
+		$("#navMenu").animate({top:"200px"},1500,function(){$("#xiangshang").animate({top:"160px"},200)});
+		setInterval(function(){$("#yun1").animate({right:"1000px"},8000,"linear",function(){$(this).css({right:"-240px"})})},100)
+		setInterval(function(){$("#yun2").animate({right:"1000px"},12000,"linear",function(){$(this).css({right:"-500px"})})},100)
+		$("#xiangshang").mouseover(function(){$("#navMenu").animate({top:"0"},500);})
+		$("#close").click(function(){
+		$("#navMenu").animate({top:"200px"},500);});
+	});
+	</script>
+<!--[if IE]>
+<script src="js/html5.min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript" src="js/EvPng.js"></script>
+<script language="javascript" type="text/javascript">EvPNG.fix("#Ev1,#Ev2,#Ev3,.men,#xiangshang");</script>
+<![endif]-->
+
+	<title>Become a Tiens DIS</title>
+	</head>
+
+	<body>
+<header style="background-color:#0095DA; height:270px;width:100%;">
+   <h1 class="logo">
+    <div style="position: absolute; top: 0px; right: 0;" id="yun1"><img width="241" height="120" src="img/yun.png" id="Ev1"></div>
+    <div style="position: absolute; top: 50px; right: -500px;" id="yun2"><img src="img/yun2.png" id="Ev3"></div>
+    <div style="position: absolute; top: 0; right: 0px;"><img src="img/ren.png" id="Ev2"></div>
+    <div style="position: absolute; bottom: 0; width:700px; background-color:#fff;height:8px;right:0;font-size:0;"></div>
+  </h1>
+    </header>
+<section style="position:absolute; width:1000px; margin-left:-500px; left:50%; top:70px;">
+      <ul>
+    <li style="text-align:left;position:relative;z-index:0;">
+          <div style="width:300px;height:200px; background-color:#007AB5;line-height:200px;text-align:center;float:left;*padding-top:50px;*height:150px;display:inline"><img src="img/logo.png" width="64" height="67" id="Ev3"></div>
+          <div style="cursor:pointer;background:url(css/images/xiangshang.png) no-repeat center center transparent;width:82px;height:40px;top:200px;left:300px;position:absolute" id="xiangshang"></div>
+          <div style="width:660px;height:160px;padding:20px;text-align:center;float:left;position: absolute;z-index:0; left:300px;background-color:rgba(0, 0, 0, 0.498039);*background-color:#394568;_background-color:#394568;background-color:#394568\9" id="navMenu"> <a href="#" style="font-size:18px;margin-right:15px; float:left;">Dashboard</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Sponsor New Dis</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Buy Now</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Account Management</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Track Orders</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Auto Ship</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Account Security</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Bonus Payment Method</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Prepaid Account Security</a><a href="#" style="font-size:18px;margin-right:15px; float:left;">Shopping List</a>
+        <div style="background-color:rgb(159, 202, 226);padding:5px;position:absolute;right:0;top:0;cursor:pointer;font-size: 18px;color:#000;height:12px;line-height:12px;" id="close">×</div>
+      </div>
+        </li>
+    <li style="position:relative;z-index:2; clear:both">
+          <div style="width:300px;height:200px; background-color:#933;float:left;"><img src="img/bann1.jpg" width="300" height="200"></div>
+          <div  style="width:200px;height:200px; background-color:#8F55B9;" class="iFont" id="buynow"><a href="placeAnOrder.html" class="men">Buy now</a></div>
+          <div style="width:300px;height:200px;  background-color:#090;float:left"><img src="img/bann2.jpg" width="300" height="200"></div>
+          <div style="width:200px;height:200px;  background-color:#009999;" class="iFont"><a href="dashboard.html" class="men">Dashboard</a></div>
+        </li>
+    <li>
+          <div style="width:300px;height:200px;  background-color:#C6342A;font-size:20px;position:relative;cursor:pointer" class="iFont"><a href="Account Management-Account Information.html" class="men" style="width:300px;height:200px;">Account Management</a></div>
+          <div style="width:200px;height:200px;  background-color:#CC0;float:left"><img src="img/bann3.jpg" width="200" height="200"></div>
+          <div style="width:300px;height:200px;  background-color:#FF6699" class="iFont"><a href="Sponsor New DIS.html" class="men">Sposor New dis</a></div>
+          <div style="width:200px;height:200px;  background-color:#CC0;font-size:23px;" class="iFont"><a href="Shopping List.html" class="men">Shopping List</a></div>
+        </li>
+  </ul>
+    </section>
+<footer id="footer">
+      <div class="clearfix hLine"></div>
+      <ul class="inner">
+    <li>2013 Tiens Group © All Rights Reserved </li>
+    <li>|</li>
+    <li>Your use of this website constitutes acknowledgement and acceptance of our <a href="#">Terms</a> & <a href="#">conditions</a> .</li>
+  </ul>
+    </footer>
+<!-- BSA AdPacks code. Please ignore and remove. --> 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11577561-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
