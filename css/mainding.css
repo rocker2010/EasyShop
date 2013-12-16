@@ -484,20 +484,20 @@ line-height: 19px;
 
 }
 .tableD1 td{
-	border:solid 1px #4499ee;
+	border:solid 1px #BBD6FD;
 	padding:6px 0;
 	text-align: center; 
 
 }
 .tableD1 th{
 	border-bottom:solid 2px #333;
-	border-left:solid 1px #4499ee;
-	border-right:solid 1px #4499ee;
-	border-top:0;
+	border-left:solid 1px #BBD6FD;
+	border-right:solid 1px #BBD6FD;
+	border-top:solid 1px #BBD6FD;;
 	padding:6px 0;
 	text-align: center; 
 	COLOR: #333;
-	BACKGROUND-COLOR: #4499ee; 
+	background-color:#C1E4FF;
 	font-weight: bold;
 
 }
